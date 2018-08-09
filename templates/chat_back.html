@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" type="text/css" href="/static/popup.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script><link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    function removeElement() {
+        document.getElementById("panel1").style.visibility = "visible";
+        document.getElementById("vis-button").style.display = "none";
+    }
+    function closeElement() {
+        document.getElementById("vis-button").style.display = "block";
+        document.getElementById("panel1").style.visibility = "hidden";
+    }
+ function about() {
+        window.open("/home/reshma/Desktop/flask-exp/chatbot-master/templates/about.html")
+    }
+</script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <style type="text/css">
+            .fixed-panel 
+            {
+                min-height: 480px;
+                max-height: 494px;
+                background-color: #19313c;
+                color: white;
+                overflow: auto;
+            }
+            .media-list {
+
+            overflow: auto;
+            clear: both;
+            display: table;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: normal;
+            line-break: strict; 
+
+           }
+            .bottext{
+                color: aqua;
+                text-align: right;
+                font-weight: bold;
+        
+            }
+            .usertext{
+                color:#5EFB6E;
+                text-align: left;
+                font-weight: bold;
+            }
+            .panel {
+            margin-bottom: 30px;
+            margin-top: -5px;
+            margin-left: 480px;
+            margin-right: -435px;
+            background-color: #fff;
+            border: 6px solid transparent;
+            border-radius: 25px;
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+            box-shadow: 0 1px 1px rgba(0,0,0,.05);
+            }
+            .panel-info {
+            border-color: #0c2735;
+            }
+            .panel-info>.panel-heading {
+            color: #fff;
+            font-size: 16px;
+            background-color: #0c2735;
+            border-color: #0c2735;
+            }
+            .panel-footer {
+            padding: 10px 15px;
+            background-color: #0c2735;
+            border-top: 1px solid #0c2735;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            }
+            .txtheader {
+                text-align: center;
+                }
+            .visible 
+            {
+                visibility: visible;
+            }
+            .invisible 
+            {
+                visibility: hidden;
+            }
+            .popbt{
+                background-color: transparent;
+                background-repeat:no-repeat;
+                border: none;
+                position: absolute;
+                right:    0;
+                bottom:   0;
+            }
+            .transparentbgbtn{
+                background-color: transparent;
+                background-repeat:no-repeat;
+                border: none;
+                padding: 5px 10px;
+            }
+            .transparentbgbtn:hover {
+                background-color: #19313c;
+            }
+            .tab-class{
+                border:1px solid #0c2735;
+                width:100%;
+                height:5px;
+            }
+            .tab-class,td,th{
+                border:1px solid #0c2735;
+            }            
+            .txt-panel-inv{
+                text-align: center;
+            }
+
+            body {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#609680+0,008844+9,0c454a+52,1a2f3c+100 */
+
+            background: rgb(96,150,128); /* Old browsers */
+            background: linear-gradient(to bottom, rgba(96,150,128,1) 0%,rgba(0,136,68,1) 9%,rgba(12,69,74,1) 52%,rgba(26,47,60,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#609680', endColorstr='#1a2f3c',GradientType=0 ); /* IE6-9 */
+
+                }
+
+        </style>
+    </head>
+<body>
+    <div class="row">
+        <h3 class="txtheader"><strong><font color="white"> HELLO!!! </font></strong></h3></div>
+        <button class="btn popbt" type="button" id="vis-button" onclick="removeElement()" ><span class="fa fa-comments" style="font-size:75px;color:white;text-align: center; "></span></button>     
+        
+        <div id="panel1" class="invisible">
+          <div class="container background-color: rgb(255,0,255);">
+            
+                <div class="col-md-4 col-md-offset-4">
+                
+                    <div id="chatPanel" class="panel panel-info">
+                        <div class="panel-heading">
+                        <table>
+                            <tr>
+                                    <strong><td><i class="fa fa-comments" style="color:cyan; font-size: 20px"></i></td>
+                                <td>
+                                    നമസ്കാരം!
+                                </td>
+                                    </strong>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td>
+                                    <button class="btn transparentbgbtn" type="button" id="minimize-button" onclick="closeElement()" ><span class="glyphicon glyphicon-minus" style="font-size:16px;color:white;"></span></button></td>
+                                <td>
+                                    <button class="btn transparentbgbtn" type="button" id="close-button" onclick="window.location.href='/'"><span class="glyphicon glyphicon-off" style="font-size:16px;color:white;"></span></button>
+                                </td>
+                                <td>
+                                    <button class="btn transparentbgbtn" type="button" id="about-button" onclick="window.location.href='/about/'"><span class="glyphicon glyphicon-question-sign" style="font-size:16px;color:white;"></span></button>
+                                </td>
+                            </tr>
+                        </table>
+                        </div>
+                        <div class="panel-body fixed-panel">
+                            <ul class="media-list">
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <form method="post" id="chatbot-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="സന്ദേശം" name="messageText" id="messageText" autofocus/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info" type="button" id="chatbot-form-btn">  <span class="glyphicon glyphicon-send"></span></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+        $(function() {
+            $('#chatbot-form-btn').click(function(e) {
+                e.preventDefault();
+                $('#chatbot-form').submit();
+            });
+
+            $('#chatbot-form').submit(function(e) {
+                e.preventDefault();
+
+                var message = $('#messageText').val();
+                $(".media-list").append('<li class="media"><div class="media-body"><div class="media"><div class="media-body"><div class="usertext">' + message + '</div></div></div></div></li>');
+                $.ajax({
+                    type: "POST",
+                    url: "/ask",
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#messageText').val('');
+
+                        var answer = response.answer;
+                        const chatPanel = document.getElementById("chatPanel");
+                        $(".media-list").append('<li class="media"><div class="media-body"><div class="media"><div class="media-body"><div class="bottext">' + answer + '</div></div></div></div></div></li>');
+            $(".fixed-panel").stop().animate({ scrollTop: $(".fixed-panel")[0].scrollHeight}, 1000);
+            
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+        </script>
+    </body>
+</html>
