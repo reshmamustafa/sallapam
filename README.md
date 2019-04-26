@@ -25,4 +25,6 @@ Read the Whoosh documentation at https://whoosh.readthedocs.org/en/latest/
 </br>
 - A sample experiment dataset is given in the file named "data" in the root directory. 
 - The searched index and corresponding response are stored in file named 'in' in index folder of the root directory.
-
+### Built with
+[Whoosh](https://github.com/mchaput/whoosh/) Python search engine library is used.
+See [LICENSE.txt](https://github.com/mchaput/whoosh/blob/master/LICENSE.txt) file for the details.
